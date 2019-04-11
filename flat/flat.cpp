@@ -32,7 +32,7 @@ flat::flat(const flat & obj)
 	this->cost = obj.cost;
 }
 
-int flat::sumOfVolume()
+int flat::sumOfVolume()const
 {
 	int sum = 0;
 	for (int i = 0; i < rooms; i++)
@@ -69,9 +69,9 @@ bool flat::isNumRoomsSame(const flat & obj)
 	return false;
 }
 
-bool flat::isVolumeSame( flat & obj)
+bool flat::isVolumeSame(const flat &obj) 
 {
-	if (this->sumOfVolume() == obj.sumOfVolume())
+	if (this->sumOfVolume() == obj.getVolume())
 	{
 		return true;
 	}
