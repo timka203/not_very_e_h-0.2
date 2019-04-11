@@ -15,7 +15,7 @@ flat::flat(int r, int cost)
 	for (int i = 0; i < r; i++)
 	{
 		this->r[i].setName();
-		this->r[i].setName();
+		this->r[i].setVolume();
 	}
 	this->cost = cost;
 	this->rooms = r;
