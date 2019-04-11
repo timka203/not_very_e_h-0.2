@@ -4,8 +4,9 @@
 
 room::room()
 {
-	volume = 0;
-	name = nullptr;
+	volume = 10;
+	this->name = new char[strlen("hall") + 1];
+	strcpy_s(this->name, strlen("hall") + 1, "hall");
 }
 
 room::room(const char * name, int volume)
