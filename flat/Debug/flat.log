@@ -1,0 +1,6 @@
+﻿  flat.cpp
+c:\users\пашакуловт\source\repos\flat\flat\flat.cpp(102): warning C4018: <: несоответствие типов со знаком и без знака
+  Source.cpp
+c:\users\пашакуловт\source\repos\flat\flat\source.cpp(7): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Создание кода...
+  flat.vcxproj -> C:\Users\ПашакуловТ\source\repos\flat\Debug\flat.exe
