@@ -50,12 +50,12 @@ void flat::setFlat()
 	this->r = new room[r];
 
 	for (int i = 0; i < r; i++)
-	{
+	{cout<<"Now you will write information about your"<<" "<<i<<" "<<"room"<<endl;
 		this->r[i].setName();
 		this->r[i].setVolume();
 	}
 	int cost;
-	cout << "How much it will cost?" << endl;
+	cout << "How much this flat will cost?" << endl;
 	cin >> cost;
 	this->cost = cost;
 	this->rooms = r;
