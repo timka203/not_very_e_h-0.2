@@ -104,7 +104,7 @@ void flat::info()
 		r[i].info();
 	}
 }
-int  flat::getVolume()
+int  flat::getVolume() const
 {
 	return this->sumOfVolume();
 }
