@@ -87,6 +87,22 @@ bool flat::isCostSame(const flat & obj)
 
 void flat::copy(const flat & obj)
 {
+rooms=0;
+delete[] r;
+cost=0;
+if(obj.r==nullptr)
+{
+return;
+}
+
+this->r = new room[obj.rooms];
+	this->rooms = obj.rooms;
+	for (int i = 0; i < rooms; i++)
+	{
+		this->r[i] = obj.r[i];
+	}
+	this->cost = obj.cost;
+
 	this->r = new room[obj.rooms];
 	this->rooms = obj.rooms;
 	for (int i = 0; i < rooms; i++)
